@@ -6,7 +6,7 @@ metadata:
     app: vote
   name: vote
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: vote
@@ -18,7 +18,6 @@ spec:
         app: vote
     spec:
       containers:
-      - image: schoolofdevops/vote:v6
+      - image: schoolofdevops/vote:v1
         name: vote
         resources: {}
-status: {}
